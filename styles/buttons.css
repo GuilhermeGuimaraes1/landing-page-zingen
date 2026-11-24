@@ -41,3 +41,26 @@
   padding: 1rem 2rem;
   font-size: 1.125rem;
 }
+
+/* Cria o rotulo do botão e o efeito de gradiente */
+.btn[aria-label] {
+  position: relative;
+
+  &::before { /* Cria o fundo do botão */
+    content: '';
+    position: absolute;
+    border-radius: 0.5rem;
+    inset: 0.09375rem; /* 1.5px */
+    background-color: var(--bg-color);
+  }
+
+  &::after { /* Cria o texto do botão */
+    content: attr(aria-label); /* Exibe o texto do botão */
+    background: var(--btn-bg-color); 
+    -webkit-background-clip: text; /* Faz com que o gradiente seja aplicado apenas ao texto */
+    background-clip: text; /* para navegadores que não suportam o prefixo -webkit- */
+    color: transparent;
+    position: absolute;
+    z-index: 1;
+  }
+}
