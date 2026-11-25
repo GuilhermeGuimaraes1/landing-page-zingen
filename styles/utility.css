@@ -20,7 +20,7 @@
   /* Pega o minimo entre dois valor para dar a padding de 24px no mobile */
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
   margin-inline: auto;
-  border: solid violet;
+  /* border: solid violet; */
 }
 
 /* Usando para elementos que só devem ser exibidos no desktop */
@@ -38,8 +38,15 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
 .gap-1 {
   gap: 1rem;
+}
+/* Usa o \ para escapar do caractere especial */
+.gap-1\.5 {
+  gap: 1.5rem;
 }
 
 .grid {

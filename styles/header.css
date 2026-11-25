@@ -1,0 +1,6 @@
+header {
+  /* faz o primeiro elemento se afastar do lado direito */
+  & a:first-child {
+    margin-right: auto;
+  }
+}
