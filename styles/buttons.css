@@ -60,7 +60,7 @@
     -webkit-background-clip: text; /* Faz com que o gradiente seja aplicado apenas ao texto */
     background-clip: text; /* para navegadores que não suportam o prefixo -webkit- */
     color: transparent;
-    position: absolute;
+    position: relative;
     z-index: 1;
   }
 }

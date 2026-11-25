@@ -84,6 +84,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Ele tira a bolinha de lista do nevegador, porém se eu definir o role=list ele entende como lista novamente, isso e muito importante para acessibilidade*/
 ul[role='list'] {
   list-style: none;
